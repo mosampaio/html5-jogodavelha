@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset="utf-8"> 
+	<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.2/prototype.js" type="text/javascript"></script>
+	<script src="jogo-da-velha.js" type="text/javascript"></script>
+    <script type="text/javascript">
+	document.observe("dom:loaded", novo);
+	function novo() {
+		tabuleiro = new Tabuleiro('velha');
+	}
+	</script> 
+  </head> 
+  <body> 
+    <canvas id="velha">Canvas n�o habilitado no browser.</canvas> 
+	<br/>
+	<input type="button" value="Novo" onclick="javascript:novo()"/>
+	<br/>
+<br/>
+	from: <a href="http://www.mosampaio.com.br">http://www.mosampaio.com.br</a>
+  </body> 
+</html> 
